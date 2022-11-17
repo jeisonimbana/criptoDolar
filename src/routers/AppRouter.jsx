@@ -12,8 +12,7 @@ const AppRouter = () => {
   const { status } = useSelector((state) => state.auth);
 
   const token = localStorage.getItem("cobrando") || ""
-  console.log("🚀 ~ file: AppRouter.jsx ~ line 14 ~ AppRouter ~ token", token)
-  
+
   useEffect(() => {
     if(token !== ""){
       dispatch(onLogin({name:token}))
@@ -35,7 +34,6 @@ const AppRouter = () => {
             :(
               <>
                 <Route path="/*" element={<RoutePublic />} />
-                
               </>
             )  
           }

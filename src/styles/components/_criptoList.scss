@@ -1,0 +1,98 @@
+.cardsListSearch {
+  width: 100%;
+  margin: 10px;
+}
+
+.cardsListSearchContainer {
+  padding: 15px 0px;
+  padding-left: 30px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  margin: 0px auto;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.342);
+  font-size: 1.2rem;
+}
+
+.cardsListInput {
+  width: 100%;
+  padding: 4px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cardsListContain {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.cardsListCard {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.377);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.8s ease;
+
+.cardsListCard_title{
+  text-align: center; 
+
+  h3{
+    font-size: 1.1rem;
+  }
+}
+
+}
+.cardList_search{
+  cursor: pointer;
+  font-size: x-large;
+}
+.cardsListCard:hover {
+  transform: scale(1.05);
+  transition: transform 0.8s ease;
+}
+
+.cardListPoint {
+  width: 10px;
+  height: 10px;
+  background: rgba(4, 223, 4, 0.712);
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 2px rgb(57, 255, 17);
+
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.cardsListImg {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cardsListTitle {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 10px auto;
+}
+
+.cardsListInfo {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.cardListInfoItem {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.cardsListIconStart {
+  color: #ffc700;
+}
