@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes  } from "react-router-dom";
 import RoutePrivate from "./RoutePrivate";
 import RoutePublic from "./RoutePublic";
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,6 +7,7 @@ import { onLogin } from "../store/auth/authSlice";
 
 const AppRouter = () => {
   const dispatch = useDispatch();
+
 
   const { status } = useSelector((state) => state.auth);
 
@@ -17,8 +18,7 @@ const AppRouter = () => {
     if(token !== ""){
       dispatch(onLogin({name:token}))
     }
-    
-  }, [])
+  }, [dispatch,token])
   
 
   return (
