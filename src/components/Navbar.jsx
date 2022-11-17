@@ -35,7 +35,8 @@ const Navbar = () => {
                 isActive ? "linkMenu active" : "linkMenu"
               }
             >
-              Candidatos
+              
+              Criptomonedas
             </NavLink>
           </li>
         </ul>

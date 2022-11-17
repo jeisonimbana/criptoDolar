@@ -7,11 +7,11 @@ import Layout from "../components/layout/Layout";
 const RoutePrivate = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route path="/home" element={<Home />} />
-        <Route path="/list" element={<CriptoList />} />
+      <Route path="" element={<Layout />}>
+        <Route path="home" element={<Home />} />
+        <Route path="list" element={<CriptoList />} />
       </Route>
-      <Route path="/*" element={<Navigate to="/home" />} />
+      <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   );
 };
