@@ -1,5 +1,79 @@
 .home_container{
   width: 100%;
   height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .convertir{
+    height: 400px;
+   
+    background: $gradient;
+    border-radius: 18px;
+    padding: 30px 40px;
+    text-align: center;
+
+    .home_title{
+      color: aliceblue;
+      margin: 40px 0px;
+      h1{
+        font-size: 3rem;
+        font-weight: 700;
+        
+      }
+    }
+
+    .home_convertir{
+
+      ::placeholder{
+        color: rgb(223, 223, 223);
+      }
+    }
+
+    .catidad_dolares{
+      margin-top: 40px;
+      font-size: 2rem;
+    }
+  }
+
+
+  input,select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 15em;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    background:linear-gradient(to left, $glass-icon 0em, $glass 0em);
+    color: white;
+
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* <option> colors */
+    option {
+      color: inherit;
+      background-color: $option;
+    }
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
+    }
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  select{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+    no-repeat right 0.8em center / 1.4em,
+  linear-gradient(to left, $glass-icon 3em, $glass 3em);
+  width: 15em;
+  }
   
+  
+
 }
