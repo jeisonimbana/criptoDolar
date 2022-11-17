@@ -6,8 +6,10 @@ import { getListCriptosAsync } from "../../store/criptos/criptoAsync";
 const valueUsers = [1, 1, 1, 1];
 
 const CriptoList = () => {
-  const { criptos } = useSelector((state) => state.criptos);
   const dispatch = useDispatch();
+
+  const { criptos } = useSelector((state) => state.criptos);
+
   const [valueSearch, setvalueSearch] = useState("");
   const [valueCriptos, setValueCriptos] = useState(criptos);
 
@@ -15,9 +17,6 @@ const CriptoList = () => {
     setvalueSearch(e.target.value.toUpperCase());
   };
 
-  useEffect(() => {
-    dispatch(getListCriptosAsync());
-  }, []);
 
   useEffect(() => {
     const newArray = criptos.filter((cripto) =>
