@@ -26,10 +26,19 @@ const AppRouter = () => {
       <Routes>
           {
             (status === "authenticated") 
-            ? <Route path="/auth/*" element={<RoutePrivate />} />
-            :  <Route path="/*" element={<RoutePublic />} />
+            ? (
+              <>
+                <Route path="/auth/*" element={<RoutePrivate />} />
+                <Route path="/*" element={<Navigate to="/auth/home" />} />
+              </>
+            )
+            :(
+              <>
+                <Route path="/*" element={<RoutePublic />} />
+                
+              </>
+            )  
           }
-          <Route path="/*" element={<Navigate to="/auth/home" />} />
       </Routes>
     </BrowserRouter>
   );

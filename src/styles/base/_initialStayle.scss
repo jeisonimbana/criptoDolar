@@ -1,5 +1,64 @@
+/*======    BASE    ======*/
 
-body {
-  margin: 0px;
-  padding: 0px;
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior: smooth;
+  line-height: 1.15; /* 1 */
+
+}
+
+body{
+  margin: 0;
+}
+
+
+h1,h2,h3,h4{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+img{
+  border-style: none;
+  height:auto;
+  object-fit: fill;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+font-family: inherit; /* 1 */
+font-size: 100%; /* 1 */
+line-height: 1.15; /* 1 */
+margin: 0; /* 2 */
+}
+
+
+button,
+input { /* 1 */
+overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+text-transform: none;
 }
